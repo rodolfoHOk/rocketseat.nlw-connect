@@ -4,8 +4,10 @@
 
 ## Trilhas
 
-- [REACT](/react/)
+- [React](/react/)
 
-- [JAVA](/java/)
+- [Java](/java/)
 
 - [C#](/csharp/)
+
+- [Node](/nodejs/)
