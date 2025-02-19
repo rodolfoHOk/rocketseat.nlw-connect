@@ -1,11 +1,13 @@
 package br.com.rocketseat.hiokdev.events.services;
 
+import br.com.rocketseat.hiokdev.events.exceptions.BadRequestException;
 import br.com.rocketseat.hiokdev.events.exceptions.NotFoundException;
 import br.com.rocketseat.hiokdev.events.models.Event;
 import br.com.rocketseat.hiokdev.events.repositories.EventRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EventService {
@@ -18,6 +20,11 @@ public class EventService {
 
     public Event addNewEvent(Event event){
         event.setPrettyName(event.getTitle().toLowerCase().replaceAll(" ", "-"));
+
+        Optional<Event> existsEvent =  eventRepository.findByPrettyName(event.getPrettyName());
+        if (existsEvent.isPresent()) {
+            throw new BadRequestException("Event title already exists");
+        }
         return eventRepository.save(event);
     }
 
