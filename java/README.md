@@ -1,16 +1,12 @@
-# NLW Connect
+# NLW Connect - Trilha Java
 
 > Evento da RocketSeat de 17 a 20 de fevereiro de 2025
 
-## Trilhas
+## Tecnologias
 
-- [React](/react/)
-
-- [Java](/java/)
-
-- [C#](/csharp/)
-
-- [Node](/nodejs/)
+- Java
+- Spring Boot / Spring Framework
+- MySQL
 
 ## Links úteis:
 
