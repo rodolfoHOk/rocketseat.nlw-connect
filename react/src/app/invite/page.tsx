@@ -5,6 +5,8 @@ import { Ranking } from './ranking'
 import { Stats } from './stats'
 
 export default function InvitePage() {
+  const inviteLink = 'http://localhost:3000/invite/1234567890123456'
+
   return (
     <div className="min-h-dvh flex flex-col md:flex-row items-center justify-between gap-16">
       <div className="max-w-[550px] flex flex-col gap-10 w-full">
@@ -33,7 +35,7 @@ export default function InvitePage() {
             </p>
           </div>
 
-          <InviteLinkInput />
+          <InviteLinkInput inviteLink={inviteLink} />
 
           <Stats />
         </div>
