@@ -28,6 +28,7 @@
 - TechLibrary.Api: dotnet add package BCrypt.Net-Next
 - TechLibrary.Api: dotnet add package Microsoft.IdentityModel.Tokens
 - TechLibrary.Api: dotnet add package System.IdentityModel.Tokens.Jwt
+- TechLibrary.Api: dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 
 ## Links úteis:
 

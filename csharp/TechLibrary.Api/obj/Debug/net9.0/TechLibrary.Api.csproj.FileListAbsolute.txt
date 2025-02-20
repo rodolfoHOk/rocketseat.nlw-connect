@@ -75,3 +75,6 @@
 /app/TechLibrary.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
 /app/TechLibrary.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /app/TechLibrary.Api/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/app/TechLibrary.Api/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/app/TechLibrary.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/app/TechLibrary.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
