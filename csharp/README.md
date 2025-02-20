@@ -8,6 +8,7 @@
 - .Net
 - SQLite
 - Docker
+- Autenticação e segurança com JWT
 
 ## Guia de comandos
 
@@ -24,6 +25,9 @@
 - dotnet add TechLibrary.Api/TechLibrary.Api.csproj reference TechLibrary.Exception/TechLibrary.Exception.csproj
 - TechLibrary.Api: dotnet add package Microsoft.EntityFrameworkCore
 - TechLibrary.Api: dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+- TechLibrary.Api: dotnet add package BCrypt.Net-Next
+- TechLibrary.Api: dotnet add package Microsoft.IdentityModel.Tokens
+- TechLibrary.Api: dotnet add package System.IdentityModel.Tokens.Jwt
 
 ## Links úteis:
 
