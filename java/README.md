@@ -8,6 +8,12 @@
 - Spring Boot / Spring Framework
 - MySQL
 
+## Diferenças em relação às aulas
+
+- Uso do Lombok para diminuir boilerplate
+- Uso do Flyway para migrações
+- Adicionado uma api exception handler para tratar as exceções ao invés de tratá-las nos controllers
+
 ## Links úteis:
 
 - [Notion](https://efficient-sloth-d85.notion.site/NLW-Connect-337b47bcef1640fc9a536f66dd45d8f1)
