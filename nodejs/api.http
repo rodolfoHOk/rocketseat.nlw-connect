@@ -1,0 +1,17 @@
+### Created
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Rodolfo HiOk",
+  "email": "hiok@email.com"
+}
+
+### Bad Request
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Rodolfo HiOk",
+  "email": "hiokemail.com"
+}
