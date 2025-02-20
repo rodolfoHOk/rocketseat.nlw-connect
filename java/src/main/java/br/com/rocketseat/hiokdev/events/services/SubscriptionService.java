@@ -1,5 +1,7 @@
 package br.com.rocketseat.hiokdev.events.services;
 
+import br.com.rocketseat.hiokdev.events.dto.SubscriptionRankingByUser;
+import br.com.rocketseat.hiokdev.events.dto.SubscriptionRankingItem;
 import br.com.rocketseat.hiokdev.events.dto.SubscriptionResponse;
 import br.com.rocketseat.hiokdev.events.exceptions.ConflictException;
 import br.com.rocketseat.hiokdev.events.exceptions.NotFoundException;
@@ -11,7 +13,9 @@ import br.com.rocketseat.hiokdev.events.repositories.SubscriptionRepository;
 import br.com.rocketseat.hiokdev.events.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.IntStream;
 
 @Service
 public class SubscriptionService {
@@ -55,6 +59,27 @@ public class SubscriptionService {
                         savedSubscription.getEvent().getPrettyName() +
                         "/" +
                         savedSubscription.getSubscriber().getId());
+    }
+
+    public List<SubscriptionRankingItem> getCompleteRanking(String prettyName) {
+        Event event = eventRepository.findByPrettyName(prettyName)
+                .orElseThrow(() -> new NotFoundException("Event not found with pretty name: " + prettyName));
+        return subscriptionRepository.generateRanking(event.getEventId());
+    }
+
+    public SubscriptionRankingByUser getRankingByUser(String prettyName, Integer userId) {
+        List<SubscriptionRankingItem> ranking = getCompleteRanking(prettyName);
+
+        SubscriptionRankingItem subscriptionRankingItem = ranking.stream()
+                .filter(item -> item.userId().equals(userId))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("Not exists indication for user: " + userId));
+
+        int position = IntStream.range(0, ranking.size())
+                .filter(pos -> ranking.get(pos).userId().equals(userId))
+                .findFirst().orElseGet(() -> Integer.MAX_VALUE - 1);
+
+        return new SubscriptionRankingByUser(subscriptionRankingItem, position + 1);
     }
 
 }
