@@ -1,0 +1,11 @@
+/app/TechLibrary.Communication/bin/Debug/net9.0/TechLibrary.Communication.deps.json
+/app/TechLibrary.Communication/bin/Debug/net9.0/TechLibrary.Communication.dll
+/app/TechLibrary.Communication/bin/Debug/net9.0/TechLibrary.Communication.pdb
+/app/TechLibrary.Communication/obj/Debug/net9.0/TechLibrary.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/app/TechLibrary.Communication/obj/Debug/net9.0/TechLibrary.Communication.AssemblyInfoInputs.cache
+/app/TechLibrary.Communication/obj/Debug/net9.0/TechLibrary.Communication.AssemblyInfo.cs
+/app/TechLibrary.Communication/obj/Debug/net9.0/TechLibrary.Communication.csproj.CoreCompileInputs.cache
+/app/TechLibrary.Communication/obj/Debug/net9.0/TechLibrary.Communication.dll
+/app/TechLibrary.Communication/obj/Debug/net9.0/refint/TechLibrary.Communication.dll
+/app/TechLibrary.Communication/obj/Debug/net9.0/TechLibrary.Communication.pdb
+/app/TechLibrary.Communication/obj/Debug/net9.0/ref/TechLibrary.Communication.dll

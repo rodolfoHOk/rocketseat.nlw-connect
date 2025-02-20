@@ -7,6 +7,7 @@
 - Java
 - Spring Boot / Spring Framework
 - MySQL
+- Docker
 
 ## Diferenças em relação às aulas
 

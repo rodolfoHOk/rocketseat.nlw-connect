@@ -1,0 +1,11 @@
+/app/TechLibrary.Exception/bin/Debug/net9.0/TechLibrary.Exception.deps.json
+/app/TechLibrary.Exception/bin/Debug/net9.0/TechLibrary.Exception.dll
+/app/TechLibrary.Exception/bin/Debug/net9.0/TechLibrary.Exception.pdb
+/app/TechLibrary.Exception/obj/Debug/net9.0/TechLibrary.Exception.GeneratedMSBuildEditorConfig.editorconfig
+/app/TechLibrary.Exception/obj/Debug/net9.0/TechLibrary.Exception.AssemblyInfoInputs.cache
+/app/TechLibrary.Exception/obj/Debug/net9.0/TechLibrary.Exception.AssemblyInfo.cs
+/app/TechLibrary.Exception/obj/Debug/net9.0/TechLibrary.Exception.csproj.CoreCompileInputs.cache
+/app/TechLibrary.Exception/obj/Debug/net9.0/TechLibrary.Exception.dll
+/app/TechLibrary.Exception/obj/Debug/net9.0/refint/TechLibrary.Exception.dll
+/app/TechLibrary.Exception/obj/Debug/net9.0/TechLibrary.Exception.pdb
+/app/TechLibrary.Exception/obj/Debug/net9.0/ref/TechLibrary.Exception.dll
