@@ -1,4 +1,4 @@
-### Created
+### Subscribe to event
 POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
@@ -7,7 +7,7 @@ Content-Type: application/json
   "email": "hiok@email.com"
 }
 
-### Bad Request
+### Subscribe to event - Bad Request
 POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
@@ -15,3 +15,6 @@ Content-Type: application/json
   "name": "Rodolfo HiOk",
   "email": "hiokemail.com"
 }
+
+### Access invite link
+GET http://localhost:3333/invites/2572fe57-3eae-4167-a859-81b11124cb71
