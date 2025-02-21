@@ -16,5 +16,27 @@ Content-Type: application/json
   "email": "hiokemail.com"
 }
 
+### Subscribe to event with referrer
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Ren",
+  "email": "ren@email.com",
+  "referrer": "8e0dc19f-0fa6-4fc6-b9b0-c36ccece2595"
+}
+
 ### Access invite link
 GET http://localhost:3333/invites/2572fe57-3eae-4167-a859-81b11124cb71
+
+### Get subscriber invites clicks
+GET http://localhost:3333/subscribers/2572fe57-3eae-4167-a859-81b11124cb71/ranking/clicks
+
+### Get subscriber invites count
+GET http://localhost:3333/subscribers/2572fe57-3eae-4167-a859-81b11124cb71/ranking/count
+
+### Get subscriber ranking position
+GET http://localhost:3333/subscribers/2572fe57-3eae-4167-a859-81b11124cb71/ranking/position
+
+### Get ranking
+GET http://localhost:3333/ranking
